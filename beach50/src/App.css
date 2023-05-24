@@ -1,0 +1,27 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+   color: #424656;
+   font-family: "Nanum Gothic";
+}
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 60px;
+   padding: 0 50px;
+   border-bottom: solid 1px #e1e2e3;
+}
+.header > h2,
+.header > a {
+   font-size: 22px;
+   font-weight: 800;
+}
+.header > a {
+   color: #a6abbd;
+}
