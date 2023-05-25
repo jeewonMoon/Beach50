@@ -3,6 +3,7 @@
 body {
    color: #424656;
    font-family: "Nanum Gothic";
+   margin: 0;
 }
 a {
    text-decoration: none;
@@ -16,6 +17,10 @@ a {
    height: 60px;
    padding: 0 50px;
    border-bottom: solid 1px #e1e2e3;
+   background-color: #fff;
+   position: fixed;
+   z-index: 10;
+   width: calc(100% - 100px);
 }
 .header > h2,
 .header > a {
