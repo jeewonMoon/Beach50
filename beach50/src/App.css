@@ -9,7 +9,9 @@ a {
    text-decoration: none;
    color: inherit;
 }
-
+main {
+   margin-top: 60px;
+}
 .header {
    display: flex;
    align-items: center;
@@ -21,6 +23,7 @@ a {
    position: fixed;
    z-index: 10;
    width: calc(100% - 100px);
+   top: 0;
 }
 .header > h2,
 .header > a {

@@ -1,0 +1,8 @@
+.beachMapContainer {
+   width: 55%;
+   height: calc(100vh - 60px);
+}
+.beachMap {
+   width: 100%;
+   height: 100%;
+}

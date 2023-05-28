@@ -1,15 +1,13 @@
 import "./home.css";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
 
 const { kakao } = window;
 
 export default function Home() {
-   const navigate = useNavigate();
    const areaArr = [
       {
-         title: "강원도",
+         title: "강원",
          latlng: new kakao.maps.LatLng(37.7, 128.2),
       },
       {
@@ -17,27 +15,23 @@ export default function Home() {
          latlng: new kakao.maps.LatLng(35.2, 129.1),
       },
       {
-         title: "경상북도",
-         latlng: new kakao.maps.LatLng(36.3, 128.7),
+         title: "경남",
+         latlng: new kakao.maps.LatLng(35.8, 128.3),
       },
       {
-         title: "경상남도",
-         latlng: new kakao.maps.LatLng(35.5, 128.2),
+         title: "충남",
+         latlng: new kakao.maps.LatLng(36.350793, 127.6),
       },
       {
-         title: "충청북도",
-         latlng: new kakao.maps.LatLng(36.650793, 127.478485),
-      },
-      {
-         title: "전라북도",
+         title: "전북",
          latlng: new kakao.maps.LatLng(35.8, 127),
       },
       {
-         title: "전라남도",
+         title: "전남",
          latlng: new kakao.maps.LatLng(34.860337, 126.824799),
       },
       {
-         title: "제주도",
+         title: "제주",
          latlng: new kakao.maps.LatLng(33.431441, 126.5),
       },
    ];
