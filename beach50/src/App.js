@@ -17,7 +17,7 @@ function App() {
                element={<BeachList />}
             />
             <Route
-               path="/:area/:id"
+               path="/:area/:name"
                element={<BeachDetail />}
             />
          </Routes>
