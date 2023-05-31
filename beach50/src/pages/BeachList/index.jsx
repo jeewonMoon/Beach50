@@ -5,7 +5,6 @@ import axios from "axios";
 import XMLParser from "react-xml-parser";
 import Header from "../../components/Header";
 import beach from "../../data/beachData.json";
-import areaData from "../../data/areaData.json";
 import BeachMap from "../../components/BeachMap";
 
 export default function BeachList() {
@@ -13,7 +12,6 @@ export default function BeachList() {
    const [beachData, setBeachData] = useState([]);
    const [beachAreaData, setBeachAreaData] = useState([]);
    const defaultImg = "https://i.postimg.cc/mZ0cPh9M/default.png";
-   const latlng = areaData.filter((areaData) => areaData.title === area);
 
    useEffect(() => {
       axios
@@ -26,6 +24,9 @@ export default function BeachList() {
             console.log(result.children[1].children[0].children);
 
             trimData(result.children[1].children[0].children);
+         })
+         .catch((err) => {
+            console.log("fail: " + err);
          });
    }, []);
 
