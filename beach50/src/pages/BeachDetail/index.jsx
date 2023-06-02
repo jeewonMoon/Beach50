@@ -51,7 +51,7 @@ export default function BeachDetail() {
       <>
          <Header title={name} />
          <main>
-            {detail && (
+            {detail.length > 0 && (
                <div className="beachDetailContainer">
                   <div className="beachDetail">
                      <div className="beachHeader">

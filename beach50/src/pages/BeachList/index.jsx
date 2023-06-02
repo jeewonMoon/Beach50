@@ -75,40 +75,44 @@ export default function BeachList() {
          <Header title={area} />
          <main>
             <div className="beachListContainer">
-               <div className="beachList">
-                  {beachData.map((item) => {
-                     return (
-                        <div
-                           className="beachItem"
-                           key={item[0].value}
-                        >
-                           <div className="beachImg">
-                              <img
-                                 src={
-                                    item[9].value ? item[9].value : defaultImg
-                                 }
-                                 alt={item[3].value}
-                              />
+               {beachData.length > 0 && (
+                  <div className="beachList">
+                     {beachData.map((item) => {
+                        return (
+                           <div
+                              className="beachItem"
+                              key={item[0].value}
+                           >
+                              <div className="beachImg">
+                                 <img
+                                    src={
+                                       item[9].value
+                                          ? item[9].value
+                                          : defaultImg
+                                    }
+                                    alt={item[3].value}
+                                 />
+                              </div>
+                              <div>
+                                 <Link
+                                    to={`/${area}/${item[3].value}`}
+                                    className="beachItemTitle"
+                                 >
+                                    {item[3].value} 해수욕장
+                                 </Link>
+                                 <p>{item[10].value}</p>
+                                 <a
+                                    href={item[7].value}
+                                    className="beachLink"
+                                 >
+                                    {item[3].value}해변 관련 사이트 바로가기
+                                 </a>
+                              </div>
                            </div>
-                           <div>
-                              <Link
-                                 to={`/${area}/${item[3].value}`}
-                                 className="beachItemTitle"
-                              >
-                                 {item[3].value} 해수욕장
-                              </Link>
-                              <p>{item[10].value}</p>
-                              <a
-                                 href={item[7].value}
-                                 className="beachLink"
-                              >
-                                 {item[3].value}해변 관련 사이트 바로가기
-                              </a>
-                           </div>
-                        </div>
-                     );
-                  })}
-               </div>
+                        );
+                     })}
+                  </div>
+               )}
                <BeachMap
                   data={beachAreaData}
                   level={11}
