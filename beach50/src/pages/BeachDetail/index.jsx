@@ -8,7 +8,7 @@ import "./beachDetail.css";
 
 export default function BeachDetail() {
    const { area, name } = useParams();
-   const [detail, setDetail] = useState();
+   const [detail, setDetail] = useState([]);
    const [areaData, setAreaData] = useState([]);
 
    useEffect(() => {
