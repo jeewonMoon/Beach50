@@ -25,7 +25,7 @@
 <br/>
 
 <h3>기술 스택 </h3> 
-<img src="https://img.shields.io/badge/react native-61DAFB?style=for-the-badge&logo=React&logoColor=black">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
 
 <br/>
 <details>
